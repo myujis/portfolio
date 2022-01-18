@@ -2,12 +2,11 @@ import React from 'react';
 import { Root, Section } from '../styles/pages/home';
 import { Header } from '../components/Header';
 import { Social } from '../components/Social';
-import { ExperienceSection } from './sections/Experience';
-import { AboutSection } from './sections/About';
-import { ProjectsSection } from './sections/Projects';
-import { SkillCard } from '../components/SkillCard';
-import { SkillsSection } from './sections/Skills';
-import { ContactSection } from './sections/Contact';
+import ExperienceSection from './sections/Experience';
+import AboutSection from './sections/About';
+import ProjectsSection from './sections/Projects';
+import SkillsSection from './sections/Skills';
+import ContactSection from './sections/Contact';
 
 const Home: React.FC = () => {
 	return (

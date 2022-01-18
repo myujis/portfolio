@@ -13,13 +13,13 @@ import {
 	JobTitleWrapper,
 	Title,
 	Wrapper
-} from './styled';
+} from '../../../styles/pages/sections/Experience/styled';
 
 interface Props {
 	sectionNumber: Number;
 }
 
-export const ExperienceSection = (props: Props) => {
+const ExperienceSection: React.FC<Props> = (props: Props) => {
 	const [selected, setSelected] = React.useState(0);
 	const experiences = [
 		{
@@ -134,3 +134,5 @@ export const ExperienceSection = (props: Props) => {
 		</Container>
 	);
 };
+
+export default ExperienceSection;

@@ -1,13 +1,18 @@
 import React from 'react';
 import { SkillCard } from '../../../components/SkillCard';
 import { skillsService } from '../../../service/mockup';
-import { Container, Index, Title, CardsWrapper } from './styled';
+import {
+	Container,
+	Index,
+	Title,
+	CardsWrapper
+} from '../../../styles/pages/sections/Skills/styled';
 
 interface Props {
 	sectionNumber: Number;
 }
 
-export const SkillsSection = (props: Props) => {
+const SkillsSection: React.FC<Props> = (props: Props) => {
 	const skills = skillsService();
 	return (
 		<Container>
@@ -22,3 +27,4 @@ export const SkillsSection = (props: Props) => {
 		</Container>
 	);
 };
+export default SkillsSection;

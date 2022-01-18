@@ -1,5 +1,10 @@
 import React from 'react';
-import { CardsWrapper, Container, Index, Title } from './styled';
+import {
+	CardsWrapper,
+	Container,
+	Index,
+	Title
+} from '../../../styles/pages/sections/Projects/styled';
 import { ProjectCard } from '../../../components/ProjectCard';
 import LeftArrow from '../../../icons/leftArrow';
 import RightArrow from '../../../icons/rightArrow';
@@ -9,7 +14,7 @@ interface Props {
 	sectionNumber: Number;
 }
 
-export const ProjectsSection = (props: Props) => {
+const ProjectsSection = (props: Props) => {
 	return (
 		<Container>
 			<Title>
@@ -23,3 +28,5 @@ export const ProjectsSection = (props: Props) => {
 		</Container>
 	);
 };
+
+export default ProjectsSection;
