@@ -1,0 +1,21 @@
+import React from 'react';
+import { Container, SocialLink } from './styled';
+import Linkedin from '../../icons/linkedin';
+import Instagram from '../../icons/instagram';
+import Github from '../../icons/github';
+
+export const Social = () => {
+	return (
+		<Container>
+			<SocialLink href="https://github.com/myujis" target="_blank">
+				<Github size="30px" />
+			</SocialLink>
+			<SocialLink
+				href="https://www.linkedin.com/in/matheusshiraishi/"
+				target="_blank"
+			>
+				<Linkedin size="30px" />
+			</SocialLink>
+		</Container>
+	);
+};
