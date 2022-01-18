@@ -10,13 +10,13 @@ import {
 	Headline1,
 	Headline2,
 	Headline3
-} from './styled';
+} from '../../../styles/pages/sections/About/styled';
 import ProfileImage from '../../../../public/images/FotoMatheus.png';
 
 interface Props {
-	sectionNumber: Number;
+	sectionNumber?: Number;
 }
-export const AboutSection = (props: Props) => {
+const AboutSection: React.FC<Props> = (props: Props) => {
 	return (
 		<Container>
 			<Title>
@@ -38,3 +38,4 @@ export const AboutSection = (props: Props) => {
 		</Container>
 	);
 };
+export default AboutSection;

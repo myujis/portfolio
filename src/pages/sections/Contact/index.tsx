@@ -1,10 +1,16 @@
 import React from 'react';
-import { Container, Email, Index, Title, Text } from './styled';
+import {
+	Container,
+	Email,
+	Index,
+	Title,
+	Text
+} from '../../../styles/pages/sections/Contact/styled';
 
 interface Props {
 	sectionNumber: Number;
 }
-export const ContactSection = (props: Props) => {
+const ContactSection: React.FC<Props> = (props: Props) => {
 	return (
 		<Container>
 			<Title>
@@ -16,3 +22,5 @@ export const ContactSection = (props: Props) => {
 		</Container>
 	);
 };
+
+export default ContactSection;
