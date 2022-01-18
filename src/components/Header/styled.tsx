@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.nav`
-	width: 100%;
 	@media (min-width: 701px) {
 		height: 50px;
+		width: 100%;
+		padding-right: 50px;
 	}
 	@media (max-width: 700px) {
 		display: none;
@@ -15,7 +16,6 @@ export const Container = styled.nav`
 	gap: 16px;
 	justify-content: flex-end;
 	align-items: center;
-	padding-right: 50px;
 	/* border-radius: 0px 0px 14px 14px; */
 	/* background: linear-gradient(
 		90deg,
@@ -52,7 +52,7 @@ export const Anchor = styled.a<PropsAnchor>`
 	height: auto;
 	width: auto;
 	padding: 6px;
-	display: ${(props) => (props.clicked ? `flex` : `none`)};
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	user-select: none;
@@ -64,6 +64,9 @@ export const Anchor = styled.a<PropsAnchor>`
 	box-sizing: border-box;
 	vertical-align: middle;
 	text-decoration: none;
+	@media (max-width: 700px) {
+		font-size: ${(props) => props.theme.fontSizes.low};
+	}
 
 	&::before,
 	&::after {
@@ -108,6 +111,9 @@ export const Index = styled.text`
 export const Button = styled.a`
 	width: auto;
 	height: auto;
+	@media (max-width: 700px) {
+		font-size: ${(props) => props.theme.fontSizes.low};
+	}
 	padding: 6px 8px 6px 8px;
 	display: flex;
 	justify-content: center;
@@ -121,53 +127,27 @@ export const Button = styled.a`
 	}
 `;
 
-interface Props {
-	clicked: Boolean;
-}
-export const MenuMobile = styled.div<Props>`
+export const ContainerMobile = styled.div`
 	@media (min-width: 701px) {
 		display: none;
 	}
-	position: absolute;
-	bottom: -50px;
-	left: 14px;
-	z-index: 7;
-	display: flex;
-	width: auto;
-	height: auto;
-`;
-
-export const ContainerMobile = styled.div<Props>`
-	width: 100%;
-	background: rgba(160, 160, 160, 0.1);
-	backdrop-filter: blur(5px);
-	height: ${(props) => (props.clicked ? `auto` : `0px`)};
-	padding-top: ${(props) => (props.clicked ? `10px` : `0px`)};
-	padding-bottom: ${(props) => (props.clicked ? `10px` : `0px`)};
-	padding-left: 20px;
-	padding-right: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	gap: 15px;
-	align-items: center;
-	justify-content: space-evenly;
-	position: fixed;
-	top: 0;
-	z-index: 5;
-	transition: all 0.5s ease-in-out;
-`;
-
-export const ArrowContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: auto;
-	height: auto;
-	border-radius: 50%;
-	background: ${(props) => props.theme.colors.text};
-	transition: all 0.2s ease-in-out;
-	&:hover {
-		transform: scale(1.1);
+	@media (max-width: 700px) {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 16px;
+		padding-right: 16px;
+		position: fixed;
+		top: 0;
+		display: flex;
+		gap: 8px;
+		justify-content: center;
+		align-items: center;
+		background: rgba(160, 160, 160, 0.1);
+		backdrop-filter: blur(5px);
+		z-index: 5;
 	}
 `;

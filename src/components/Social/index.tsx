@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, SocialLink } from './styled';
 import Linkedin from '../../icons/linkedin';
-import Instagram from '../../icons/instagram';
 import Github from '../../icons/github';
 
 export const Social = () => {
