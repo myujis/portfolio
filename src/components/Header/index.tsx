@@ -6,22 +6,12 @@ import {
 	Links,
 	Index,
 	Button,
-	ContainerMobile,
-	MenuMobile,
-	ArrowContainer
+	ContainerMobile
 } from './styled';
 import { headerService } from '../../service/mockup';
-import Menu from '../../icons/menu';
-import ArrowUp from '../../icons/arrowUp';
-import theme from '../../styles/theme';
 
 export const Header = () => {
 	const items = headerService();
-	const [clicked, setClicked] = React.useState(false);
-
-	const handleMenu = React.useCallback(() => {
-		setClicked((previous) => !previous);
-	}, [clicked]);
 
 	return (
 		<>
@@ -41,38 +31,17 @@ export const Header = () => {
 					</Button>
 				</Links>
 			</Container>
-			<ContainerMobile clicked={clicked}>
-				<MenuMobile clicked={clicked}>
-					{clicked ? (
-						<ArrowContainer>
-							<ArrowUp
-								color={theme.colors.background}
-								size="32px"
-								cursor="pointer"
-								onClick={handleMenu}
-							/>
-						</ArrowContainer>
-					) : (
-						<Menu
-							color="#ffffff"
-							size="32px"
-							cursor="pointer"
-							onClick={handleMenu}
-						/>
-					)}
-				</MenuMobile>
-				{/* <LinksMobile clicked={clicked}> */}
+			<ContainerMobile>
 				{items.map((item, index) => {
 					return (
-						<Anchor href={`#` + items[index].link} clicked={clicked}>
+						<Anchor href={`#` + items[index].link} clicked={true}>
 							{item.name}
 						</Anchor>
 					);
 				})}
-				{/* <Button href="https://google.com" target="_blank">
+				<Button href="https://google.com" target="_blank">
 					Resume
-				</Button> */}
-				{/* </LinksMobile> */}
+				</Button>
 			</ContainerMobile>
 		</>
 	);

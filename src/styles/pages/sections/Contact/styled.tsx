@@ -10,6 +10,7 @@ export const Container = styled.div`
 	padding-right: 30px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 15px;
 	@media (max-width: 720px) {
 		text-align: center;
@@ -46,4 +47,32 @@ export const Text = styled.span``;
 
 export const Email = styled.span`
 	color: ${(props) => props.theme.colors.primary};
+`;
+
+export const SocialLinkContainer = styled.div`
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	height: auto;
+	gap: 15px;
+	@media (min-width: 821px) {
+		display: none;
+	}
+`;
+
+export const SocialLink = styled.a`
+	width: auto;
+	height: auto;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	svg path {
+		transition: all 0.25s ease-in-out;
+		fill: ${(props) => props.theme.colors.text};
+	}
+	&:hover {
+		svg path {
+			fill: ${(props) => props.theme.colors.primary};
+		}
+	}
 `;

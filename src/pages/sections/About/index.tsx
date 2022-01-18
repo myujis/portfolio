@@ -24,7 +24,7 @@ const AboutSection: React.FC<Props> = (props: Props) => {
 			</Title>
 			<Row>
 				<PictureContainer>
-					<ProfilePicture src={ProfileImage} />
+					<ProfilePicture src="https://media-exp1.licdn.com/dms/image/C4E03AQHXO3X2Cj_1jA/profile-displayphoto-shrink_400_400/0/1636473248188?e=1648080000&v=beta&t=_Ke-YtGerE9f8AW4UkDxcttpCpUMJ6QvAWRvOzxdnW4" />
 				</PictureContainer>
 				<Column>
 					<Headline1>Matheus Shiraishi</Headline1>

@@ -59,8 +59,8 @@ export const Row = styled.div`
 `;
 
 export const PictureContainer = styled.div`
-	height: 180px;
-	width: 140px;
+	height: auto;
+	width: 160px;
 	position: relative;
 	border-radius: 4px;
 	display: flex;
