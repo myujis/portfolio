@@ -5,7 +5,9 @@ export const Container = styled.div`
 	width: auto;
 	max-width: 70vw;
 	height: auto;
-	min-height: 60vh;
+	@media (max-width: 1000px) {
+		min-height: 60vh;
+	}
 	display: flex;
 	flex-direction: column;
 	gap: 30px;

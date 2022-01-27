@@ -10,25 +10,27 @@ export const Container = styled.div`
 	width: auto;
 	max-width: 60vw;
 	height: auto;
-	min-height: 60vh;
+	@media (max-width: 1000px) {
+		min-height: 60vh;
+	}
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	@media (max-width: 720px) {
+	@media (max-width: 900px) {
 		text-align: center;
 	}
-	@media (min-width: 721px) {
+	@media (min-width: 901px) {
 		text-align: left;
 	}
 `;
 
 export const Index = styled.span`
 	color: ${(props) => props.theme.colors.primary};
-	@media (max-width: 720px) {
+	@media (max-width: 900px) {
 		font-size: ${(props) => props.theme.fontSizes.high};
 	}
-	@media (min-width: 721px) {
+	@media (min-width: 901px) {
 		font-size: ${(props) => props.theme.fontSizes.higher};
 	}
 `;
@@ -38,10 +40,10 @@ export const Title = styled.div`
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-weight: 700;
-	@media (max-width: 720px) {
+	@media (max-width: 900px) {
 		font-size: ${(props) => props.theme.fontSizes.higher};
 	}
-	@media (min-width: 721px) {
+	@media (min-width: 901px) {
 		font-size: ${(props) => props.theme.fontSizes.extraHigher};
 	}
 `;
@@ -49,10 +51,10 @@ export const Title = styled.div`
 export const Wrapper = styled.div`
 	width: 100%;
 	display: flex;
-	@media (min-width: 729px) {
+	@media (min-width: 901px) {
 		flex-direction: row;
 	}
-	@media (max-width: 728px) {
+	@media (max-width: 900px) {
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
@@ -63,11 +65,11 @@ export const Items = styled.div`
 	height: auto;
 	background: transparent;
 	display: flex;
-	@media (min-width: 729px) {
+	@media (min-width: 901px) {
 		flex-direction: column;
 		width: 20%;
 	}
-	@media (max-width: 728px) {
+	@media (max-width: 900px) {
 		flex-direction: row;
 		width: 100%;
 		justify-content: center;
@@ -78,21 +80,21 @@ export const Item = styled.div<Props>`
 	transition: all 0.25s ease-in-out;
 	@media (max-width: 380px) {
 	}
-	@media (min-width: 729px) {
+	@media (min-width: 901px) {
 		width: 100%;
 	}
 	background: ${(params: Props) =>
 		params.selected
 			? theme.colors.backgroundSecondary
 			: theme.colors.background};
-	@media (min-width: 729px) {
+	@media (min-width: 901px) {
 		border-left: 2px solid
 			${(params: Props) =>
 				params.selected
 					? theme.colors.primary
 					: theme.colors.backgroundSecondary};
 	}
-	@media (max-width: 728px) {
+	@media (max-width: 900px) {
 		border-bottom: 2px solid
 			${(params: Props) =>
 				params.selected
@@ -105,10 +107,10 @@ export const Item = styled.div<Props>`
 	&:hover {
 		background: ${(props) => props.theme.colors.backgroundSecondary};
 		color: ${(props) => props.theme.colors.primary};
-		@media (min-width: 729px) {
+		@media (min-width: 901px) {
 			border-left: 2px solid ${(props) => props.theme.colors.primary};
 		}
-		@media (max-width: 728px) {
+		@media (max-width: 900px) {
 			border-bottom: 2px solid ${(props) => props.theme.colors.primary};
 		}
 	}
@@ -124,10 +126,10 @@ export const Content = styled.div`
 	@media (min-width: 761px) {
 		width: 80%;
 	}
-	@media (max-width: 760px) and (min-width: 729px) {
+	@media (max-width: 760px) and (min-width: 901px) {
 		width: 70%;
 	}
-	@media (max-width: 728px) and (min-width: 451px) {
+	@media (max-width: 900px) and (min-width: 451px) {
 		width: 60%;
 	}
 	@media (max-width: 450px) {

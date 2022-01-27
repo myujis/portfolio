@@ -5,7 +5,9 @@ export const Container = styled.div`
 	width: auto;
 	max-width: 60vw;
 	height: auto;
-	min-height: 60vh;
+	@media (max-width: 1000px) {
+		min-height: 60vh;
+	}
 	padding-left: 30px;
 	padding-right: 30px;
 	display: flex;

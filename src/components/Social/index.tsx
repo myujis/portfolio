@@ -7,13 +7,13 @@ export const Social = () => {
 	return (
 		<Container>
 			<SocialLink href="https://github.com/myujis" target="_blank">
-				<Github size="30px" />
+				<Github size="36px" />
 			</SocialLink>
 			<SocialLink
 				href="https://www.linkedin.com/in/matheusshiraishi/"
 				target="_blank"
 			>
-				<Linkedin size="30px" />
+				<Linkedin size="36px" />
 			</SocialLink>
 		</Container>
 	);
