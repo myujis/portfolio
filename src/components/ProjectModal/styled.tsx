@@ -14,7 +14,7 @@ export const Root = styled.div`
 			'image image text'
 			'tech tech tech';
 	}
-	@media (min-width: 1201px) and (max-width: 1400px) {
+	@media (min-width: 1301px) and (max-width: 1400px) {
 		width: 70%;
 		grid-template-areas:
 			'image image text'
@@ -22,7 +22,7 @@ export const Root = styled.div`
 			'image image text'
 			'tech tech tech';
 	}
-	@media (min-width: 801px) and (max-width: 1200px) {
+	@media (min-width: 851px) and (max-width: 1300px) {
 		width: 84%;
 		grid-template-areas:
 			'image text text'
@@ -30,18 +30,21 @@ export const Root = styled.div`
 			'image text text'
 			'tech tech tech';
 	}
-	@media (max-width: 800px) {
+	@media (max-width: 850px) {
 		width: 92%;
 		grid-template-areas:
 			'image'
 			'text'
 			'tech';
 	}
+	@media (max-width: 500px) {
+		height: 90%;
+	}
 	height: 80%;
 	background: ${(props) => props.theme.colors.backgroundSecondary};
 	border-radius: 14px;
 	position: relative;
-	padding: 40px;
+	padding: 60px;
 	overflow-y: scroll;
 	overflow-x: hidden;
 
@@ -68,8 +71,12 @@ export const CloseIcon = styled.div`
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	margin-top: 6px;
-	margin-left: 6px;
+	margin-top: 12px;
+	margin-left: 12px;
+	@media (max-width: 400px) {
+		margin-top: 8px;
+		margin-left: 8px;
+	}
 	cursor: pointer;
 	svg path {
 		transition: all 0.25s ease-in-out;
@@ -88,8 +95,12 @@ export const LinksWrapper = styled.div`
 	position: absolute;
 	right: 0;
 	top: 0;
-	margin-top: 8px;
-	margin-right: 8px;
+	@media (max-width: 400px) {
+		margin-top: 10px;
+		margin-right: 6px;
+	}
+	margin-top: 18px;
+	margin-right: 12px;
 	gap: 8px;
 `;
 
@@ -116,18 +127,18 @@ export const Image = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	@media (min-width: 1201px) {
+	@media (min-width: 1301px) {
 		img {
 			max-width: 450px;
 		}
 	}
-	@media (min-width: 801px) and (max-width: 1200px) {
+	@media (min-width: 851px) and (max-width: 1300px) {
 		img {
 			min-width: 250px;
 			max-width: 350px;
 		}
 	}
-	@media (max-width: 800px) and (min-width: 451px) {
+	@media (max-width: 850px) and (min-width: 451px) {
 		img {
 			max-width: 300px;
 		}
@@ -157,7 +168,12 @@ export const Tech = styled.div`
 	justify-content: space-evenly;
 	gap: 6px;
 	p {
-		font-size: ${(props) => props.theme.fontSizes.normal};
+		@media (min-width: 1001px) {
+			font-size: ${(props) => props.theme.fontSizes.higher};
+		}
+		@media (max-width: 1000px) {
+			font-size: ${(props) => props.theme.fontSizes.normal};
+		}
 		color: ${(props) => props.theme.colors.primary};
 	}
 `;
@@ -168,5 +184,10 @@ export const Text = styled.div`
 	}
 	display: flex;
 	text-align: center;
-	font-size: ${(props) => props.theme.fontSizes.normal};
+	@media (min-width: 1001px) {
+		font-size: ${(props) => props.theme.fontSizes.high};
+	}
+	@media (max-width: 1000px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
 `;

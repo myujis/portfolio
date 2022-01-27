@@ -6,7 +6,7 @@ export const Container = styled.div`
 	max-width: 60vw;
 	height: auto;
 	@media (max-width: 1000px) {
-		min-height: 60vh;
+		min-height: 40vh;
 	}
 	padding-left: 30px;
 	padding-right: 30px;
@@ -51,6 +51,9 @@ export const Row = styled.div`
 	width: 100%;
 	height: auto;
 	gap: 30px;
+	@media (min-width: 1201px) {
+		gap: 50px;
+	}
 	@media (max-width: 720px) {
 		flex-direction: column;
 		align-items: center;
@@ -62,7 +65,15 @@ export const Row = styled.div`
 
 export const PictureContainer = styled.div`
 	height: auto;
-	width: 160px;
+	@media (min-width: 1201px) {
+		width: 240px;
+	}
+	@media (min-width: 701px) and (max-width: 1200px) {
+		width: 200px;
+	}
+	@media (max-width: 700px) {
+		width: 160px;
+	}
 	position: relative;
 	border-radius: 4px;
 	display: flex;
@@ -111,20 +122,39 @@ export const Column = styled.div`
 
 export const Headline1 = styled.span`
 	color: ${(props) => props.theme.colors.primary};
-	@media (max-width: 720px) {
+	@media (min-width: 1201px) {
+		font-size: ${(props) => props.theme.fontSizes.extraHigher};
+	}
+	@media (min-width: 701px) and (max-width: 1200px) {
 		font-size: ${(props) => props.theme.fontSizes.higher};
 	}
-	@media (min-width: 721px) {
-		font-size: ${(props) => props.theme.fontSizes.extraHigher};
+	@media (max-width: 700px) {
+		font-size: ${(props) => props.theme.fontSizes.higher};
 	}
 	font-weight: bold;
 `;
 export const Headline2 = styled.span`
 	color: ${(props) => props.theme.colors.hoverText};
-	font-size: ${(props) => props.theme.fontSizes.high};
+	@media (min-width: 1201px) {
+		font-size: ${(props) => props.theme.fontSizes.high};
+	}
+	@media (min-width: 701px) and (max-width: 1200px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
+	@media (max-width: 700px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
 	font-weight: bold;
 `;
 export const Headline3 = styled.span`
-	font-size: ${(props) => props.theme.fontSizes.low};
+	@media (min-width: 1201px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
+	@media (min-width: 701px) and (max-width: 1200px) {
+		font-size: ${(props) => props.theme.fontSizes.low};
+	}
+	@media (max-width: 700px) {
+		font-size: ${(props) => props.theme.fontSizes.low};
+	}
 	font-weight: normal;
 `;

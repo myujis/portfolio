@@ -14,6 +14,7 @@ import {
 	Title,
 	Wrapper
 } from '../../../styles/pages/sections/Experience/styled';
+import { experiencesService } from '../../../service/mockup';
 
 interface Props {
 	sectionNumber: Number;
@@ -21,48 +22,7 @@ interface Props {
 
 const ExperienceSection: React.FC<Props> = (props: Props) => {
 	const [selected, setSelected] = React.useState(0);
-	const experiences = [
-		{
-			jobName: 'Software Engineer',
-			company: 'Pro Sky',
-			companyWebsite: 'https://www.pro-sky.com/',
-			startDate: new Date('09/01/2021'),
-			ended: false,
-			endDate: new Date(),
-			descriptions: [
-				'Development of maintainable and efficient solutions for internal projects',
-				'',
-				'Worked with diferent languages, frameworks and libraries such as JavaScript, TypeScript, React, and jQuery',
-				"Scrum as working methodology with Atlassian's technologies such as Confluence and Jira"
-			]
-		},
-		{
-			jobName: 'Software Engineer',
-			company: 'Cuponeria',
-			companyWebsite: 'https://cuponeria.com.br',
-			startDate: new Date('03/01/2021'),
-			ended: true,
-			endDate: new Date('08/31/2021'),
-			descriptions: [
-				'Write maintainable and efficient code for internal projects',
-				'Worked with diferent languages, frameworks and libraries such as JavaScript, TypeScript, React, and jQuery',
-				"Scrum as working methodology with Atlassian's technologies such as Confluence and Jira"
-			]
-		},
-		{
-			jobName: 'Software Engineer Intern',
-			company: 'Yoobot',
-			companyWebsite: 'https://yoobot.com.br/',
-			startDate: new Date('07/01/2020'),
-			ended: true,
-			endDate: new Date('02/28/2021'),
-			descriptions: [
-				'Write maintainable and efficient code for internal projects',
-				'Worked with diferent languages, frameworks and libraries such as JavaScript, TypeScript, React, and jQuery',
-				"Scrum as working methodology with Atlassian's technologies such as Confluence and Jira"
-			]
-		}
-	];
+	const experiences = experiencesService();
 	const months = [
 		'Jan',
 		'Fev',

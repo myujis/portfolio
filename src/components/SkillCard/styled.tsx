@@ -5,9 +5,13 @@ export const Container = styled.div`
 		width: 100px;
 		height: 100px;
 	}
-	@media (min-width: 641px) {
+	@media (min-width: 641px) and (max-width: 1200px) {
 		width: 120px;
 		height: 120px;
+	}
+	@media (min-width: 1201px) {
+		width: 140px;
+		height: 140px;
 	}
 	padding-top: 16px;
 	padding-bottom: 4px;
@@ -31,11 +35,19 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
 	color: ${(props) => props.theme.colors.primary};
-	font-size: ${(props) => props.theme.fontSizes.low};
 	position: absolute;
 	bottom: 15%;
 	max-width: 70%;
 	text-align: center;
+	@media (min-width: 1201px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
+	@media (min-width: 701px) and (max-width: 1200px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
+	@media (max-width: 700px) {
+		font-size: ${(props) => props.theme.fontSizes.low};
+	}
 `;
 
 export const Icon = styled.img`

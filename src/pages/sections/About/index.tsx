@@ -11,7 +11,6 @@ import {
 	Headline2,
 	Headline3
 } from '../../../styles/pages/sections/About/styled';
-import ProfileImage from '../../../../public/images/FotoMatheus.png';
 
 interface Props {
 	sectionNumber?: Number;

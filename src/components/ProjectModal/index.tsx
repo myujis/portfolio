@@ -17,14 +17,14 @@ export const ProjectModal = ({ handleCloseModal = () => {} }) => {
 	return (
 		<Root>
 			<CloseIcon onClick={handleCloseModal}>
-				<Close color={theme.colors.text} size="30px" />
+				<Close color={theme.colors.text} size="36px" />
 			</CloseIcon>
 			<LinksWrapper>
 				<LinkWrapper>
-					<Github color={theme.colors.text} size="30px" />
+					<Github color={theme.colors.text} size="36px" />
 				</LinkWrapper>
 				<LinkWrapper>
-					<Website color={theme.colors.text} size="30px" />
+					<Website color={theme.colors.text} size="36px" />
 				</LinkWrapper>
 			</LinksWrapper>
 			<Image>

@@ -9,6 +9,9 @@ export const Container = styled.nav`
 	@media (max-width: 700px) {
 		display: none;
 	}
+	@media (min-width: 1201px) {
+		height: 64px;
+	}
 	position: fixed;
 	top: 0;
 	z-index: 0;
@@ -60,6 +63,12 @@ export const Anchor = styled.a<PropsAnchor>`
 	@media (max-width: 700px) {
 		font-size: ${(props) => props.theme.fontSizes.low};
 	}
+	@media (min-width: 701px) and (max-width: 1200px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
+	@media (min-width: 1201px) {
+		font-size: ${(props) => props.theme.fontSizes.high};
+	}
 
 	&::before,
 	&::after {
@@ -106,6 +115,12 @@ export const Button = styled.a`
 	height: auto;
 	@media (max-width: 700px) {
 		font-size: ${(props) => props.theme.fontSizes.low};
+	}
+	@media (min-width: 701px) and (max-width: 1200px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
+	@media (min-width: 1201px) {
+		font-size: ${(props) => props.theme.fontSizes.high};
 	}
 	padding: 6px 8px 6px 8px;
 	display: flex;

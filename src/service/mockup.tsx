@@ -8,6 +8,59 @@ export const headerService = () => {
 	];
 };
 
+export const experiencesService = () => {
+	return [
+		{
+			jobName: 'Software Engineer',
+			company: 'Pro Sky',
+			companyWebsite: 'https://www.pro-sky.com/',
+			startDate: new Date('09/01/2021'),
+			ended: false,
+			endDate: new Date(),
+			descriptions: [
+				"Sustainable and efficient solutions development enabling and easing the whole processes of group flights, and private jet's flights.",
+				'Collaboration with an international team.',
+				'Ventured into different areas such as Data Science, Automation, Cloud Computing, Microservices, and others.'
+			]
+		},
+		{
+			jobName: 'Software Engineer',
+			company: 'Cuponeria',
+			companyWebsite: 'https://cuponeria.com.br',
+			startDate: new Date('03/01/2021'),
+			ended: true,
+			endDate: new Date('08/31/2021'),
+			descriptions: [
+				'Sustainable and efficient code writing for internal and external projects.',
+				'Focused on Front End development using languages and frameworks such as HTML5, CSS3, JavaScript, TypeScript, React, and jQuery.'
+			]
+		},
+		{
+			jobName: 'Software Engineer Intern',
+			company: 'Yoobot',
+			companyWebsite: 'https://yoobot.com.br/',
+			startDate: new Date('07/01/2020'),
+			ended: true,
+			endDate: new Date('02/28/2021'),
+			descriptions: [
+				'Robotic Process Automation for tax, financial and logistical processes.',
+				'Development of a integrated software for hospitals management during pandemic.'
+			]
+		},
+		{
+			jobName: 'Software Engineer Intern',
+			company: 'DDMX Labs',
+			companyWebsite: 'https://ddmx.com.br/',
+			startDate: new Date('04/01/2019'),
+			ended: true,
+			endDate: new Date('07/01/2020'),
+			descriptions: [
+				'Artificial Intelligence development in order to reduce costs and improve efficiency in energy distribution'
+			]
+		}
+	];
+};
+
 export const projectsService = () => {
 	return [
 		{

@@ -45,10 +45,29 @@ export const Title = styled.div`
 	}
 `;
 
-export const Text = styled.span``;
+export const Text = styled.span`
+	@media (min-width: 1201px) {
+		font-size: ${(props) => props.theme.fontSizes.higher};
+	}
+	@media (min-width: 701px) and (max-width: 1200px) {
+		font-size: ${(props) => props.theme.fontSizes.high};
+	}
+	@media (max-width: 700px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
+`;
 
 export const Email = styled.span`
 	color: ${(props) => props.theme.colors.primary};
+	@media (min-width: 1201px) {
+		font-size: ${(props) => props.theme.fontSizes.higher};
+	}
+	@media (min-width: 701px) and (max-width: 1200px) {
+		font-size: ${(props) => props.theme.fontSizes.high};
+	}
+	@media (max-width: 700px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
 `;
 
 export const SocialLinkContainer = styled.div`

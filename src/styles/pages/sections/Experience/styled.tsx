@@ -116,7 +116,15 @@ export const Item = styled.div<Props>`
 	}
 	text-overflow: ellipsis;
 	text-align: left;
-	font-size: ${(props) => props.theme.fontSizes.low};
+	@media (min-width: 1201px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
+	@media (min-width: 701px) and (max-width: 1200px) {
+		font-size: ${(props) => props.theme.fontSizes.low};
+	}
+	@media (max-width: 700px) {
+		font-size: ${(props) => props.theme.fontSizes.low};
+	}
 	display: flex;
 	align-items: center;
 	padding-left: 10px;

@@ -10,7 +10,8 @@ import ContactSection from './sections/Contact';
 import { ProjectModal } from '../components/ProjectModal';
 
 const Home: React.FC = () => {
-	const [modalControl, setModalControl] = React.useState(true);
+	const [modalControl, setModalControl] = React.useState(false);
+	const [projectModalInfo, setProjectModalInfo] = React.useState(null);
 	const handleModal = React.useCallback(() => {
 		setModalControl((value) => !value);
 	}, [modalControl]);
