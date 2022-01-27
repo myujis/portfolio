@@ -6,24 +6,17 @@ import {
 	Title
 } from '../../../styles/pages/sections/Projects/styled';
 import { ProjectCard } from '../../../components/ProjectCard';
-import LeftArrow from '../../../icons/leftArrow';
-import RightArrow from '../../../icons/rightArrow';
-import theme from '../../../styles/theme';
 
-interface Props {
-	sectionNumber: Number;
-}
-
-const ProjectsSection = (props: Props) => {
+const ProjectsSection = ({ sectionNumber, handleOpenModal = () => {} }) => {
 	return (
 		<Container>
 			<Title>
-				<Index>{props.sectionNumber}.&nbsp;</Index>My projects
+				<Index>{sectionNumber}.&nbsp;</Index>My projects
 			</Title>
 			<CardsWrapper>
-				<ProjectCard />
-				<ProjectCard />
-				<ProjectCard />
+				<ProjectCard handleOpenModal={handleOpenModal} />
+				<ProjectCard handleOpenModal={handleOpenModal} />
+				<ProjectCard handleOpenModal={handleOpenModal} />
 			</CardsWrapper>
 		</Container>
 	);

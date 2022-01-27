@@ -1,5 +1,5 @@
 import React from 'react';
-import { Root, Section } from '../styles/pages/home';
+import { Backdrop, Root, Section } from '../styles/pages/home';
 import { Header } from '../components/Header';
 import { Social } from '../components/Social';
 import ExperienceSection from './sections/Experience';
@@ -7,8 +7,13 @@ import AboutSection from './sections/About';
 import ProjectsSection from './sections/Projects';
 import SkillsSection from './sections/Skills';
 import ContactSection from './sections/Contact';
+import { ProjectModal } from '../components/ProjectModal';
 
 const Home: React.FC = () => {
+	const [modalControl, setModalControl] = React.useState(true);
+	const handleModal = React.useCallback(() => {
+		setModalControl((value) => !value);
+	}, [modalControl]);
 	return (
 		<Root>
 			<title>Matheus Yuji's Portfolio</title>
@@ -21,7 +26,10 @@ const Home: React.FC = () => {
 				<ExperienceSection sectionNumber={2}></ExperienceSection>
 			</Section>
 			<Section id="projects">
-				<ProjectsSection sectionNumber={3}></ProjectsSection>
+				<ProjectsSection
+					sectionNumber={3}
+					handleOpenModal={handleModal}
+				></ProjectsSection>
 			</Section>
 			<Section id="skills">
 				<SkillsSection sectionNumber={4}></SkillsSection>
@@ -29,6 +37,13 @@ const Home: React.FC = () => {
 			<Section id="contact">
 				<ContactSection sectionNumber={5}></ContactSection>
 			</Section>
+			{modalControl ? (
+				<Backdrop>
+					<ProjectModal handleCloseModal={handleModal}></ProjectModal>
+				</Backdrop>
+			) : (
+				<></>
+			)}
 		</Root>
 	);
 };

@@ -81,7 +81,7 @@ const ExperienceSection: React.FC<Props> = (props: Props) => {
 		setSelected(index);
 	};
 	return (
-		<Container>
+		<Container key={selected}>
 			<Title>
 				<Index>{props.sectionNumber}.&nbsp;</Index>Where I've Worked
 			</Title>

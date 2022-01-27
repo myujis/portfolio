@@ -56,11 +56,8 @@ export const Card = styled.div`
 export const Image = styled.img`
 	width: 100%;
 	height: 50%;
-	max-width: 100%;
-	min-width: 100%;
-	min-height: 50%;
-	max-height: 50%;
 	border-radius: 4px 4px 0px 0px;
+	object-fit: cover;
 `;
 
 export const Description = styled.span`

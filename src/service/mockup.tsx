@@ -7,13 +7,17 @@ export const headerService = () => {
 		{ name: 'Contact', link: 'contact' }
 	];
 };
-export const aboutService = () => {
-	const content = () => {};
-	const technologies = () => {
-		return ['JavaScript (ES6+)', 'TypeScript', 'React', 'Node.js', 'Python'];
-	};
 
-	return;
+export const projectsService = () => {
+	return [
+		{
+			imgLink: '',
+			description: '',
+			gitHubLink: '',
+			link: '',
+			technologies: ['', '', '']
+		}
+	];
 };
 
 export const skillsService = () => {

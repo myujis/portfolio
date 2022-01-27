@@ -16,13 +16,6 @@ export const Container = styled.nav`
 	gap: 16px;
 	justify-content: flex-end;
 	align-items: center;
-	/* border-radius: 0px 0px 14px 14px; */
-	/* background: linear-gradient(
-		90deg,
-		rgba(0, 208, 255, 1) 0%,
-		rgba(0, 128, 157, 1) 48%,
-		rgba(36, 78, 126, 1) 100%
-	); */
 	background: rgba(160, 160, 160, 0.1);
 	backdrop-filter: blur(5px);
 	z-index: 5;

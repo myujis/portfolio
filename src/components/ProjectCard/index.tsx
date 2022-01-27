@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Card, Wrapper, Image, Description } from './styled';
 
-export const ProjectCard = () => {
+export const ProjectCard = ({ handleOpenModal = () => {} }) => {
 	return (
 		<Wrapper>
 			<Card>
@@ -10,7 +10,7 @@ export const ProjectCard = () => {
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
 				</Description>
-				<Button>Learn More</Button>
+				<Button onClick={handleOpenModal}>Learn More</Button>
 			</Card>
 		</Wrapper>
 	);

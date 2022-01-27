@@ -47,3 +47,19 @@ export const Section = styled.div`
 	align-items: flex-start;
 	padding-top: 80px;
 `;
+
+export const Backdrop = styled.div`
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 10;
+	backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+`;
