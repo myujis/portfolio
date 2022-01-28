@@ -40,10 +40,10 @@ export const Title = styled.div`
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-weight: 700;
-	@media (max-width: 900px) {
+	@media (max-width: 720px) {
 		font-size: ${(props) => props.theme.fontSizes.higher};
 	}
-	@media (min-width: 901px) {
+	@media (min-width: 721px) {
 		font-size: ${(props) => props.theme.fontSizes.extraHigher};
 	}
 `;

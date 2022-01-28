@@ -4,10 +4,10 @@ export const Root = styled.div`
 	width: 100%;
 	height: 100vh;
 	padding: 0;
-	padding-bottom: 150px;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	overflow: auto;
 	overflow-x: hidden;
 	/* scroll-snap-type: y mandatory; */
@@ -39,6 +39,20 @@ export const Root = styled.div`
 	}
 `;
 
+
+export const Container = styled.div`
+	display: flex;
+	flex-direction: column;
+	padding-top: 80px;
+	@media (max-width: 900px) {
+		align-items: center;
+		gap: 60px;
+	}
+	@media (min-width: 901px) {
+		align-items: flex-start;
+		gap: 100px;
+	}
+`;
 
 export const Section = styled.div`
 	width: 100%;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Backdrop, Root, Section } from '../styles/pages/home';
+import { Backdrop, Container, Root, Section } from '../styles/pages/home';
 import { Header } from '../components/Header';
 import { Social } from '../components/Social';
 import ExperienceSection from './sections/Experience';
@@ -20,7 +20,17 @@ const Home: React.FC = () => {
 			<title>Matheus Yuji's Portfolio</title>
 			<Header></Header>
 			<Social />
-			<Section id="about">
+			<Container>
+				<AboutSection sectionNumber={1}></AboutSection>
+				<ExperienceSection sectionNumber={2}></ExperienceSection>
+				<ProjectsSection
+					sectionNumber={3}
+					handleOpenModal={handleModal}
+				></ProjectsSection>
+				<SkillsSection sectionNumber={4}></SkillsSection>
+				<ContactSection sectionNumber={5}></ContactSection>
+			</Container>
+			{/* <Section id="about">
 				<AboutSection sectionNumber={1}></AboutSection>
 			</Section>
 			<Section id="experience">
@@ -37,7 +47,7 @@ const Home: React.FC = () => {
 			</Section>
 			<Section id="contact">
 				<ContactSection sectionNumber={5}></ContactSection>
-			</Section>
+			</Section> */}
 			{modalControl ? (
 				<Backdrop>
 					<ProjectModal handleCloseModal={handleModal}></ProjectModal>

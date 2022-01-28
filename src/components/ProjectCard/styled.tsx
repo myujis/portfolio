@@ -1,17 +1,21 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-	@media (min-width: 721px) {
-		width: 200px;
-		height: 250px;
+	@media (min-width: 836px) {
+		width: 230px;
+		height: 260px;
+	}
+	@media (min-width: 721px) and (max-width: 835px) {
+		width: 300px;
+		height: 330px;
 	}
 	@media (min-width: 641px) and (max-width: 720px) {
-		width: 180px;
+		width: 260px;
 		height: 280px;
 	}
 	@media (max-width: 640px) {
-		width: 260px;
-		height: 290px;
+		width: 280px;
+		height: 300px;
 	}
 	border-radius: 4px;
 	display: flex;

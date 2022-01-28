@@ -14,7 +14,7 @@ export const Container = styled.nav`
 	}
 	position: fixed;
 	top: 0;
-	z-index: 0;
+	left: 0;
 	display: flex;
 	gap: 16px;
 	justify-content: flex-end;
@@ -150,6 +150,7 @@ export const ContainerMobile = styled.div`
 		padding-right: 16px;
 		position: fixed;
 		top: 0;
+		left: 0;
 		display: flex;
 		gap: 8px;
 		justify-content: center;

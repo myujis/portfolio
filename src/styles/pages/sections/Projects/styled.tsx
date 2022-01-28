@@ -3,11 +3,13 @@ import styled, { keyframes } from 'styled-components';
 export const Container = styled.div`
 	min-width: 350px;
 	width: auto;
-	max-width: 70vw;
+	max-width: 60vw;
 	height: auto;
 	@media (max-width: 1000px) {
-		min-height: 60vh;
+		min-height: 40vh;
 	}
+	padding-left: 30px;
+	padding-right: 30px;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
@@ -51,11 +53,11 @@ export const CardsWrapper = styled.div`
 	@media (max-width: 640px) {
 		flex-direction: column;
 	}
+	align-items: center;
 	width: 100%;
 	height: auto;
-	align-items: center;
 	justify-content: space-evenly;
 	padding-top: 4px;
 	padding-bottom: 14px;
-	gap: 25px;
+	gap: 40px;
 `;
