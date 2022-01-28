@@ -14,10 +14,11 @@ import {
 
 interface Props {
 	sectionNumber?: Number;
+	id?: string;
 }
 const AboutSection: React.FC<Props> = (props: Props) => {
 	return (
-		<Container>
+		<Container id={props.id}>
 			<Title>
 				<Index>{props.sectionNumber}.&nbsp;</Index>About me
 			</Title>

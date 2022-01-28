@@ -44,6 +44,7 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding-top: 80px;
+	padding-bottom: 160px;
 	@media (max-width: 900px) {
 		align-items: center;
 		gap: 60px;

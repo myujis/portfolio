@@ -10,10 +10,11 @@ export const Container = styled.div`
 	width: auto;
 	max-width: 60vw;
 	height: auto;
+	padding: 20px;
+	padding-top: 70px;
 	@media (max-width: 1000px) {
 		min-height: 60vh;
 	}
-	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 30px;

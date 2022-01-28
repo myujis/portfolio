@@ -2,9 +2,10 @@ import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
 	min-width: 350px;
-	width: auto;
+	width: 100%;
 	max-width: 60vw;
 	height: auto;
+	padding-top: 70px;
 	@media (max-width: 1000px) {
 		min-height: 40vh;
 	}
@@ -53,10 +54,10 @@ export const CardsWrapper = styled.div`
 	@media (max-width: 640px) {
 		flex-direction: column;
 	}
+	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: auto;
-	justify-content: space-evenly;
 	padding-top: 4px;
 	padding-bottom: 14px;
 	gap: 40px;

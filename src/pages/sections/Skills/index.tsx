@@ -10,12 +10,13 @@ import {
 
 interface Props {
 	sectionNumber: Number;
+	id?: string;
 }
 
 const SkillsSection: React.FC<Props> = (props: Props) => {
 	const skills = skillsService();
 	return (
-		<Container>
+		<Container id={props.id}>
 			<Title>
 				<Index>{props.sectionNumber}.&nbsp;</Index>Main Skills
 			</Title>

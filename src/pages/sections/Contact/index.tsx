@@ -13,10 +13,11 @@ import Github from '../../../icons/github';
 
 interface Props {
 	sectionNumber: Number;
+	id?: string;
 }
 const ContactSection: React.FC<Props> = (props: Props) => {
 	return (
-		<Container>
+		<Container id={props.id}>
 			<Title>
 				<Index>{props.sectionNumber}.&nbsp;</Index>Contact me
 			</Title>

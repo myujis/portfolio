@@ -18,6 +18,7 @@ import { experiencesService } from '../../../service/mockup';
 
 interface Props {
 	sectionNumber: Number;
+	id?: string;
 }
 
 const ExperienceSection: React.FC<Props> = (props: Props) => {
@@ -41,7 +42,7 @@ const ExperienceSection: React.FC<Props> = (props: Props) => {
 		setSelected(index);
 	};
 	return (
-		<Container key={selected}>
+		<Container id={props.id} key={selected}>
 			<Title>
 				<Index>{props.sectionNumber}.&nbsp;</Index>Where I've Worked
 			</Title>

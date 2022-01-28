@@ -5,6 +5,7 @@ export const Container = styled.div`
 	width: auto;
 	max-width: 60vw;
 	height: auto;
+	padding-top: 70px;
 	@media (max-width: 1000px) {
 		min-height: 60vh;
 	}

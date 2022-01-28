@@ -7,9 +7,9 @@ import {
 } from '../../../styles/pages/sections/Projects/styled';
 import { ProjectCard } from '../../../components/ProjectCard';
 
-const ProjectsSection = ({ sectionNumber, handleOpenModal = () => {} }) => {
+const ProjectsSection = ({ id, sectionNumber, handleOpenModal = () => {} }) => {
 	return (
-		<Container>
+		<Container id={id}>
 			<Title>
 				<Index>{sectionNumber}.&nbsp;</Index>My projects
 			</Title>

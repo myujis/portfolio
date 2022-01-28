@@ -21,14 +21,18 @@ const Home: React.FC = () => {
 			<Header></Header>
 			<Social />
 			<Container>
-				<AboutSection sectionNumber={1}></AboutSection>
-				<ExperienceSection sectionNumber={2}></ExperienceSection>
+				<AboutSection id="about" sectionNumber={1}></AboutSection>
+				<ExperienceSection
+					id="experience"
+					sectionNumber={2}
+				></ExperienceSection>
 				<ProjectsSection
+					id="projects"
 					sectionNumber={3}
 					handleOpenModal={handleModal}
 				></ProjectsSection>
-				<SkillsSection sectionNumber={4}></SkillsSection>
-				<ContactSection sectionNumber={5}></ContactSection>
+				<SkillsSection id="skills" sectionNumber={4}></SkillsSection>
+				<ContactSection id="contact" sectionNumber={5}></ContactSection>
 			</Container>
 			{/* <Section id="about">
 				<AboutSection sectionNumber={1}></AboutSection>
