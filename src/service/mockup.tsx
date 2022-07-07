@@ -17,10 +17,22 @@ export const experiencesService = () => {
 			startDate: new Date('09/01/2021'),
 			ended: false,
 			endDate: new Date(),
+			technologies: [
+				'Python',
+				'FastAPI',
+				'Flask',
+				'PostgreSQL',
+				'Debian',
+				'REST Services',
+				'SOAP Services',
+				'FileMaker',
+				'VBA',
+				'Docker',
+				'Power Query'
+			],
 			descriptions: [
-				"Sustainable and efficient solutions development enabling and easing the whole processes of group flights, and private jet's flights.",
-				'Collaboration with an international team.',
-				'Ventured into different areas such as Data Science, Automation, Cloud Computing, Microservices, and others.'
+				'Enhanced customer experience and internal processes efficiency up to 600% by implementing multiple tools for analysis of flights and aircrafts feasability.',
+				'Reduced working time on accounting processes from a working day to 1 hour weekly by the development of a middleware between internal and external platforms.'
 			]
 		},
 		{
@@ -30,9 +42,18 @@ export const experiencesService = () => {
 			startDate: new Date('03/01/2021'),
 			ended: true,
 			endDate: new Date('08/31/2021'),
+			technologies: [
+				'JavaScript',
+				'React.js',
+				'TypeScript',
+				'Next.js',
+				'Storybook',
+				'REST Services',
+				'Figma'
+			],
 			descriptions: [
-				'Sustainable and efficient code writing for internal and external projects.',
-				'Focused on Front End development using languages and frameworks such as HTML5, CSS3, JavaScript, TypeScript, React, and jQuery.'
+				'Reduced rendering time of the web application by implementing server side rendering.',
+				'Enhanced user experience by developing an extension for web browser.'
 			]
 		},
 		{
@@ -42,9 +63,22 @@ export const experiencesService = () => {
 			startDate: new Date('07/01/2020'),
 			ended: true,
 			endDate: new Date('02/28/2021'),
+			technologies: [
+				'JavaScript',
+				'React.js',
+				'TypeScript',
+				'Node.js',
+				'MySQL',
+				'SQL Server',
+				'PostgreSQL',
+				'REST Services',
+				'C#',
+				'BluePrism'
+			],
 			descriptions: [
-				'Robotic Process Automation for tax, financial and logistical processes.',
-				'Development of a integrated software for hospitals management during pandemic.'
+				"Enhanced Hospital's management efficiency up to 400% during pandemics by developing web and mobile applications.",
+				'Reduced response time from 20 minutes to around 3 minutes in hospital services by implementing web sockets features for IoT devices.',
+				'Reduced time spent on invoices processes from a working day to 20 minutes by implementing an automated invoicing bot.'
 			]
 		},
 		{
@@ -54,8 +88,9 @@ export const experiencesService = () => {
 			startDate: new Date('04/01/2019'),
 			ended: true,
 			endDate: new Date('07/01/2020'),
+			technologies: ['Python', 'Data Mining', 'Machine Learning'],
 			descriptions: [
-				'Artificial Intelligence development in order to reduce costs and improve efficiency in energy distribution'
+				'Reduced costs and increased efficiency on energy distribution by applying Association Rules.'
 			]
 		}
 	];

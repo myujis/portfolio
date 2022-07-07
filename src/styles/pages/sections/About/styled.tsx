@@ -67,13 +67,10 @@ export const Row = styled.div`
 export const PictureContainer = styled.div`
 	height: auto;
 	@media (min-width: 1201px) {
-		width: 240px;
+		width: 400px;
 	}
-	@media (min-width: 701px) and (max-width: 1200px) {
-		width: 200px;
-	}
-	@media (max-width: 700px) {
-		width: 160px;
+	@media (max-width: 1200px) {
+		width: 300px;
 	}
 	position: relative;
 	border-radius: 4px;

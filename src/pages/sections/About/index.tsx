@@ -12,6 +12,8 @@ import {
 	Headline3
 } from '../../../styles/pages/sections/About/styled';
 
+import Profile from '../../../../public/images/profile.png';
+
 interface Props {
 	sectionNumber?: Number;
 	id?: string;
@@ -24,14 +26,20 @@ const AboutSection: React.FC<Props> = (props: Props) => {
 			</Title>
 			<Row>
 				<PictureContainer>
-					<ProfilePicture src="https://media-exp1.licdn.com/dms/image/C4E03AQHXO3X2Cj_1jA/profile-displayphoto-shrink_400_400/0/1636473248188?e=1648080000&v=beta&t=_Ke-YtGerE9f8AW4UkDxcttpCpUMJ6QvAWRvOzxdnW4" />
+					<ProfilePicture src={Profile} alt="profilePicture" />
 				</PictureContainer>
 				<Column>
 					<Headline1>Matheus Shiraishi</Headline1>
 					<Headline2>Software Engineer</Headline2>
 					<Headline3>
-						I am a Software Engineer especialized in building Web Applications.
-						Currently searching for a full-time job as a Front End Engineer.
+						I am a Software Engineer passionate about technology, learning and
+						inspired by challenges.
+					</Headline3>
+					<Headline3>
+						Currently looking for a full-time position to explore highly
+						scalable and distribute systems, web applications, cloud-based
+						applications, or other areas in software engineering in order to
+						develop scalable and eficient solutions.
 					</Headline3>
 				</Column>
 			</Row>

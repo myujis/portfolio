@@ -11,6 +11,7 @@ import {
 	JobDescription,
 	JobTitle,
 	JobTitleWrapper,
+	Technologies,
 	Title,
 	Wrapper
 } from '../../../styles/pages/sections/Experience/styled';
@@ -86,6 +87,15 @@ const ExperienceSection: React.FC<Props> = (props: Props) => {
 						</Cronology>
 					</JobTitleWrapper>
 					<Description>
+						<Technologies>
+							{experiences[selected].technologies.map((item, index) => {
+								if (index == experiences[selected].technologies.length - 1)
+									return item;
+								if (index == experiences[selected].technologies.length - 2)
+									return item + ' & ';
+								return item + ', ';
+							})}
+						</Technologies>
 						{experiences[selected].descriptions.map((item, index) => {
 							return <JobDescription key={index}>{item}</JobDescription>;
 						})}

@@ -66,13 +66,12 @@ export const Items = styled.div`
 	height: auto;
 	background: transparent;
 	display: flex;
+	min-width: 160px;
 	@media (min-width: 901px) {
 		flex-direction: column;
-		width: 20%;
 	}
 	@media (max-width: 900px) {
 		flex-direction: row;
-		width: 100%;
 		justify-content: center;
 	}
 `;
@@ -203,9 +202,20 @@ export const Cronology = styled.div`
 export const Description = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 6px;
+	gap: 12px;
 `;
 
+export const Technologies = styled.span`
+	position: relative;
+	display: flex;
+	@media (max-width: 450px) {
+		font-size: ${(props) => props.theme.fontSizes.low};
+	}
+	@media (min-width: 451px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+	}
+	font-weight: 100;
+`;
 export const JobDescription = styled.span`
 	position: relative;
 	display: flex;

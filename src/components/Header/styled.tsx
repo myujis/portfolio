@@ -60,10 +60,7 @@ export const Anchor = styled.a<PropsAnchor>`
 	box-sizing: border-box;
 	vertical-align: middle;
 	text-decoration: none;
-	@media (max-width: 700px) {
-		font-size: ${(props) => props.theme.fontSizes.low};
-	}
-	@media (min-width: 701px) and (max-width: 1200px) {
+	@media (max-width: 1200px) {
 		font-size: ${(props) => props.theme.fontSizes.normal};
 	}
 	@media (min-width: 1201px) {

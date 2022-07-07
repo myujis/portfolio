@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
 	@media (min-width: 836px) {
-		width: 230px;
-		height: 260px;
+		width: 310px;
+		height: 340px;
 	}
 	@media (min-width: 721px) and (max-width: 835px) {
 		width: 300px;
@@ -75,7 +75,14 @@ export const Description = styled.span`
 
 export const Button = styled.a`
 	width: 50%;
-	height: 30px;
+	@media (min-width: 836px) {
+		font-size: ${(props) => props.theme.fontSizes.normal};
+		height: 50px;
+	}
+	@media (max-width: 835px) {
+		font-size: ${(props) => props.theme.fontSizes.low};
+		height: 30px;
+	}
 	margin-bottom: 10px;
 	padding: 2px 8px 2px 8px;
 	display: flex;
@@ -84,7 +91,6 @@ export const Button = styled.a`
 	border: 1px solid ${(props) => props.theme.colors.primary};
 	border-radius: 4px;
 	text-decoration: none;
-	font-size: ${(props) => props.theme.fontSizes.low};
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 	&:hover {

@@ -27,7 +27,9 @@ export const Header = () => {
 						);
 					})}
 					<Button
-						href="https://pt.overleaf.com/download/project/6006157199e5f222872211a0/build/17e73fc4bf7-9cef9d3dde704001/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-e2-f-5qfh&popupDownload=true"
+						href={
+							'https://drive.google.com/file/d/1EuwxVn9j68uE-R8inmgX_Ep-sIQcgyxV/view?usp=sharing'
+						}
 						target="_blank"
 					>
 						Resume
@@ -43,7 +45,9 @@ export const Header = () => {
 					);
 				})}
 				<Button
-					href="https://pt.overleaf.com/download/project/6006157199e5f222872211a0/build/17e73fc4bf7-9cef9d3dde704001/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-e2-f-5qfh&popupDownload=true"
+					href={
+						'https://drive.google.com/file/d/1EuwxVn9j68uE-R8inmgX_Ep-sIQcgyxV/view?usp=sharing'
+					}
 					target="_blank"
 				>
 					Resume

@@ -16,6 +16,7 @@ const theme = {
 	fontSizes: {
 		lower: '10px',
 		low: '12px',
+		underNormal: '14px',
 		normal: '16px',
 		high: '20px',
 		higher: '26px',
