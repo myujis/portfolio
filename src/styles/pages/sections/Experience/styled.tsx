@@ -9,11 +9,13 @@ export const Container = styled.div`
 	min-width: 700px;
 	width: auto;
 	max-width: 60vw;
-	height: auto;
 	padding: 20px;
 	padding-top: 70px;
 	@media (max-width: 1000px) {
 		min-height: 60vh;
+	}
+	@media (min-width: 1001px) {
+		min-height: 40vh;
 	}
 	display: flex;
 	flex-direction: column;
